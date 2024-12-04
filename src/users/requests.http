@@ -1,0 +1,17 @@
+### Valid POST request to create user
+POST http://localhost:3000/auth/signup
+content-type: application/json
+
+{
+  "email": "hello@hello.com",
+  "password": "joeMama123"
+}
+
+### IN-Valid POST request to create user
+POST http://localhost:3000/auth/signup
+content-type: application/json
+
+{
+  "email": "hello",
+  "password": "joeMama123"
+}
